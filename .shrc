@@ -1,0 +1,23 @@
+# vim:set ft=sh:
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ~="cd ~"
+alias -- -="cd -"
+alias l="ls -Fb"
+alias la="ls -Fba"
+alias ll="ls -Fblah"
+alias lS="ls -FblahrS"
+alias lt="ls -Fblahrt"
+alias rg="grep -r -n --color"
+alias agl="ag --pager 'less --raw-control-chars'"
+
+case $OSTYPE in
+  darwin*)
+    alias v="mvim --remote-tab-silent"
+    alias vn="mvim"
+    export CLICOLOR=1
+    ;;
+  linux*)
+    alias ls="ls --color"
+esac

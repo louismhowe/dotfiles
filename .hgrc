@@ -1,0 +1,19 @@
+[ui]
+username = Louis Howe <louismhowe@users.noreply.github.com>
+
+[extensions]
+color =
+pager =
+hgext.graphlog =
+hgext.bookmarks =
+mq =
+progress =
+fetch =
+purge =
+hggit =
+
+[pager]
+pager = LESS='FRX' less
+
+[alias]
+slog = log --template '{rev}:{node|short} {desc|firstline}\n'

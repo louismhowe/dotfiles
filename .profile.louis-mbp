@@ -1,0 +1,82 @@
+# vim:set ft=sh:
+export EDITOR=vim
+
+# Python 2.7 (override)
+export PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH"
+
+# Clang (override)
+export CLANG_ROOT="/opt/clang"
+export PATH="$CLANG_ROOT/bin:$PATH"
+
+# PostgreSQL (override)
+export PGSQL="/opt/pgsql"
+export PGDATA="/var/db/pgsql"
+export PATH="$PGSQL/bin:$PATH"
+
+# MySQL
+export MYSQL_HOME="/opt/mysql"
+export PATH="$MYSQL_HOME/bin:$PATH"
+
+# Go
+export GOROOT="/opt/go"
+export GOPATH="$HOME/src/golang/gopath"
+export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
+
+# GHC (Cabal)
+export PATH="$PATH:$HOME/Library/Haskell/bin"
+
+# Oracle JDK/JRE
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home"
+
+# Ant
+export ANT_HOME="/opt/apache-ant-1.9.3"
+export PATH="$PATH:$ANT_HOME/bin"
+
+# Maven
+export M2_HOME="/opt/apache-maven-3.1.1"
+export PATH="$PATH:$M2_HOME/bin"
+
+# Scala
+export PATH="$PATH:/opt/scala-2.10.2/bin"
+
+# Vert.x
+export VERTX="/opt/vert.x-2.0.1-final"
+export PATH="$PATH:$VERTX/bin"
+
+# Android SDK/NDK setup.
+export ANDROID="/opt/adt-bundle-mac-x86_64/sdk"
+export PATH="$PATH:$ANDROID/tools:$ANDROID/platform-tools"
+export ANDROID_NDK="/opt/android-ndk-r8d"
+export PATH="$PATH:$ANDROID_NDK"
+
+# MongoDB
+export MONGO="/opt/mongodb"
+export PATH="$PATH:$MONGO/bin"
+
+# Node.js
+export NODE_PATH="/usr/local/lib/node_modules"
+
+# nginx
+export NGINX="/opt/nginx"
+export PATH="$PATH:$NGINX/sbin"
+
+# mspgcc
+export MSPGCC="/opt/msp430-gcc-20120911"
+export PATH="$PATH:$MSPGCC/bin"
+
+# Rust
+export RUST_ROOT="/opt/rust"
+export PATH="$PATH:$RUST_ROOT/bin"
+
+# Z3 theorem prover
+export Z3_ROOT="/opt/z3"
+export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:$Z3_ROOT/lib"
+export PYTHONPATH="$PYTHONPATH:$Z3_ROOT/lib/python2.7/dist-packages"
+export PATH="$PATH:$Z3_ROOT/bin"
+
+# CVC4 theorem prover
+export CVC4_ROOT="/opt/cvc4"
+export PATH="$PATH:$CVC4_ROOT/bin"
+
+# Doxygen
+export PATH="$PATH:/Applications/Doxygen.app/Contents/Resources"
