@@ -31,3 +31,5 @@
   rc = rebase --continue
   rs = rebase --skip
   r = remote -v
+  rs = remote show
+  rsn = remote show -n
