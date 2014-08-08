@@ -11,6 +11,8 @@ alias lS="ls -FblahrS"
 alias lt="ls -Fblahrt"
 alias rg="grep -r -n --color"
 alias agl="ag --pager 'less --raw-control-chars'"
+alias tm="tmux attach"
+alias tmn="tmux new"
 
 case $OSTYPE in
   darwin*)
