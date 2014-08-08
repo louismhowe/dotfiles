@@ -2,7 +2,12 @@
 
 # Ignore if non-interactive
 [ -z "$PS1" ] && return
- 
+
+# Source if file exists and is readable
+sourceie () {
+  [ -r "$1" ] && source "$1"
+}
+
 # Prompt string
 PS1="%n@%m:%~\$ "
 HOSTNAME=$(hostname)
@@ -11,6 +16,7 @@ HOSTNAME=$(hostname)
 source "$HOME/.profile"
 
 source "$HOME/.shrc"
+sourceie "$HOME/.shrc.$HOSTNAME"
 
 # Emacs/vim mode
 bindkey -e
