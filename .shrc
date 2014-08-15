@@ -22,4 +22,8 @@ case $OSTYPE in
     ;;
   linux*)
     alias ls="ls --color"
+    alias v="gvim --remote-tab-silent"
+    alias vn="gvim"
+    alias o="xdg-open"
+    alias se="subl"
 esac
