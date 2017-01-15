@@ -16,7 +16,7 @@ HOSTNAME=$(hostname)
 source "$HOME/.profile"
 
 source "$HOME/.shrc"
-sourceie "$HOME/.shrc.$HOSTNAME"
+sourceie "$HOME/.shrc.local"
 
 # Emacs/vim mode
 bindkey -e

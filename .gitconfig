@@ -11,25 +11,34 @@
   algorithm = patience
 [merge]
   tool = kdiff3
+[push]
+  default = simple
 [alias]
   st = status -sb
   sti = status -sb --ignored
   sh = show --stat --oneline
   lsf = ls-files
-  br = branch
-  bra = branch -a
+  br = branch -vv
+  bra = branch -avv
   d = diff
   dc = diff --cached
-  dt = difftool -d
-  dtc = difftool -d --cached
+  dt = difftool -d --no-symlinks
+  dtc = difftool -d --cached --no-symlinks
   mt = mergetool
+  mm = merge --no-commit --no-ff
   l = log --decorate --pretty=oneline --abbrev-commit
+  lp = log --decorate --pretty=oneline --abbrev-commit --patch
+  ls = log --decorate --pretty=oneline --abbrev-commit --stat
   la = log --decorate --pretty=oneline --abbrev-commit --all
-  lg = log --graph --decorate --pretty=oneline --abbrev-commit
-  lga = log --graph --decorate --pretty=oneline --abbrev-commit --all
-  lp = log -p --graph
+  las = log --decorate --pretty=oneline --abbrev-commit --all --stat
+  lg = log --graph --decorate --full-history --pretty=oneline --abbrev-commit
+  lga = log --graph --decorate --full-history --pretty=oneline --abbrev-commit --all
+  lgp = log --graph --patch
+  lgs = log --graph --stat
+  lgas = log --graph --decorate --pretty=oneline --abbrev-commit --all --stat
   rc = rebase --continue
   rs = rebase --skip
+  cp = cherry-pick
   r = remote -v
   rs = remote show
   rsn = remote show -n

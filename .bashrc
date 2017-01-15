@@ -12,4 +12,4 @@ sourceie () {
 PS1="\u@\h:\w\\$ "
 
 source "$HOME/.shrc"
-sourceie "$HOME/.shrc.$HOSTNAME"
+sourceie "$HOME/.shrc.local"

@@ -10,7 +10,7 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 # Source system/host-specific profiles
-sourceie ".profile.${HOSTNAME}"
+sourceie "$HOME/.profile.local"
 
 # bash doesn't automatically source .bashrc
 [ -n "$BASH_VERSION" ] && sourceie "$HOME/.bashrc"
