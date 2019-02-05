@@ -26,9 +26,9 @@
   dtc = difftool -d --cached --no-symlinks
   mt = mergetool
   mm = merge --no-commit --no-ff
-  l = log --decorate --pretty=oneline --abbrev-commit
-  lp = log --decorate --pretty=oneline --abbrev-commit --patch
-  ls = log --decorate --pretty=oneline --abbrev-commit --stat
+  l = log --decorate --pretty=oneline --abbrev-commit --tags
+  lp = log --decorate --pretty=oneline --abbrev-commit --tags --patch
+  ls = log --decorate --pretty=oneline --abbrev-commit --tags -stat
   la = log --decorate --pretty=oneline --abbrev-commit --all
   las = log --decorate --pretty=oneline --abbrev-commit --all --stat
   lg = log --graph --decorate --full-history --pretty=oneline --abbrev-commit
