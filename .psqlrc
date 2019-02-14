@@ -1,0 +1,11 @@
+\set QUIET 1
+\set PROMPT1 '%n@%m[%/]%R%#%x '
+\set PROMPT2 '%n@%m[%/]%R%#%x '
+\set PROMPT3 '>> '
+\set VERBOSITY verbose
+\timing
+\pset expanded auto
+\pset format wrapped
+\pset columns 0
+\pset null '·'
+\unset QUIET
